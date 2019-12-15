@@ -1,0 +1,42 @@
+\documentclass{article}
+% 页眉页脚库
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{caption}
+\usepackage{graphicx, subfig}
+\usepackage{geometry}
+\usepackage{CJKutf8}
+%\usepackage{ctex}
+
+% 设置页边距
+\geometry{a4paper,left=2cm,right=2cm,top=4cm,bottom=4cm}
+% 页眉页脚
+\pagestyle{fancy}
+    \lhead{
+        \begin{CJK}{UTF8}{gbsn}
+            这是一个CJKutf8的例子，使用的字体是gbsn。
+        \end{CJK}
+    }
+    \chead{}
+    \rhead{\bfseries The performance of new graduates}
+    \lfoot{\includegraphics[scale=0.3]{test.png}}
+    \cfoot{
+        \begin{CJK}{UTF8}{gbsn}
+            第
+        \end{CJK}
+        \thepage
+        \begin{CJK}{UTF8}{gbsn}
+            页
+        \end{CJK}
+    }
+    \rfoot{To: Dean A. Smith}
+\renewcommand{\headrulewidth}{0.8pt}
+\renewcommand{\footrulewidth}{0.8pt}
+\begin{document}
+    % 有下标的算式前后加$
+    $\begin{array}{r} 1 \hspace{10pt}8 \\ + \hspace{10pt} 5_{\color{red}{1}} \hspace{6pt}4 \\[5pt] \hline 7 \hspace{10pt}2 \end{array}$
+    \\
+    \begin{CJK}{UTF8}{gbsn}
+        这是一个CJKutf8的例子，使用的字体是gbsn。
+    \end{CJK}
+\end{document}
