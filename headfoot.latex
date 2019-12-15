@@ -9,7 +9,7 @@
 %\usepackage{ctex}
 
 % 设置页边距
-\geometry{a4paper,left=2cm,right=2cm,top=4cm,bottom=4cm}
+\geometry{a4paper,left=2cm,right=2cm,top=2cm,bottom=4cm}
 % 页眉页脚
 \pagestyle{fancy}
     \lhead{
@@ -32,11 +32,42 @@
     \rfoot{To: Dean A. Smith}
 \renewcommand{\headrulewidth}{0.8pt}
 \renewcommand{\footrulewidth}{0.8pt}
+\linespread{1.6}
 \begin{document}
     % 有下标的算式前后加$
     $\begin{array}{r} 1 \hspace{10pt}8 \\ + \hspace{10pt} 5_{\color{red}{1}} \hspace{6pt}4 \\[5pt] \hline 7 \hspace{10pt}2 \end{array}$
     \\
     \begin{CJK}{UTF8}{gbsn}
-        这是一个CJKutf8的例子，使用的字体是gbsn。
+        这是一个CJKutf8的例子，使用的字体是gbsn。\\  % gbsn 文鼎ＰＬ简报宋
     \end{CJK}
+    %\fontsize{14pt}{\baselineskip}\selectfont  %设置字体
+ \begin{CJK}{UTF8}{gkai}一、计算题 \end{CJK}  % gkai 文鼎ＰＬ简中楷
+	\begin{displaymath} % displaymath replace $$
+		% \fontsize{14pt}{\baselineskip}\selectfont
+		\begin{array}{lllll}
+			 25+(50+22)=\qquad \qquad & 22\div(\qquad)-24=75 & (22+23)\times25=\qquad \qquad & 16\times2-25=\qquad \qquad \\
+			 25+(50+22)=\qquad \qquad & 22\times22-24=\qquad \qquad & 22\times(\qquad)-24=75 & 16\times2-25=\qquad \qquad \\
+			 25+(50+22)=\qquad \qquad & 22\div-24=\qquad \qquad & (22+23)\times25=\qquad \qquad & 16\times2-25=\qquad
+		\end{array}
+	\end{displaymath}
+	\begin{displaymath}
+		% \setlength{\arraycolsep}{30pt}
+		% \fontsize{14pt}{\baselineskip}\selectfont
+		\begin{array}{lll}
+			% \displaystyle\frac{2}{10}+\displaystyle\frac{(\qquad)}{10}\div\displaystyle\frac{11}{13}=\frac{23}{56} &
+            \frac{2}{10}+\frac{(\qquad)}{10}\div\frac{11}{13}=\frac{23}{56} &
+			\displaystyle\frac{2}{10}\times\displaystyle\frac{11}{13}+\displaystyle\frac{1}{10}=\qquad \qquad &
+			\displaystyle\frac{2}{10}\times\displaystyle\frac{11}{13}+\displaystyle\frac{1}{10}=\qquad \qquad  \vspace{1ex}\\  % \vspace{1ex} hangjianju
+			\displaystyle\frac{2}{10}+\displaystyle\frac{1}{10}\times\displaystyle\frac{11}{13}=\qquad \qquad &
+			\displaystyle\frac{2}{10}+\displaystyle\frac{1}{10}\times\displaystyle\frac{11}{13}=\qquad \qquad &
+			\displaystyle\frac{2}{10}\div\displaystyle\frac{11}{13}+\displaystyle\frac{1}{10}=\qquad \qquad \vspace{1cm}\\
+			\displaystyle\frac{2}{10}\times\displaystyle\frac{11}{13}+\displaystyle\frac{1}{10}=\qquad \qquad &
+			\displaystyle\frac{2}{10}+\displaystyle\frac{1}{10}\times\displaystyle\frac{11}{13}=\qquad \qquad &
+			29\times15-(\qquad)=65 \vspace{1ex}\\
+			25+(50+22)=\qquad \qquad &
+			\displaystyle\frac{2}{10}+\displaystyle\frac{1}{10}\times\displaystyle\frac{11}{13}=\qquad \qquad &
+			29\times15-(\qquad)=65 \vspace{1ex}\\
+			\displaystyle\frac{2}{10}+\displaystyle\frac{1}{10}\times\displaystyle\frac{11}{13}=\qquad \qquad & \vspace{1ex} & 
+		\end{array}
+	\end{displaymath}
 \end{document}
