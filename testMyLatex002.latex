@@ -1,0 +1,62 @@
+\documentclass[UTF8,a4paper]{ctexart}
+ \usepackage{geometry,fancyhdr}
+% \usepackage{geometry}
+% \geometry{left=1cm, right=1cm, top=1cm, bottom=1cm, head=1mm, foot=0.5cm}
+% \RequirePackage[a4paper]{geometry}
+\geometry{
+  % textwidth=138mm,
+  % textheight=215mm,
+  left=10mm,
+  right=10mm,
+  top=40mm, 
+  bottom=25.4mm,
+  headheight=0.4cm,
+  headsep=4mm,
+  footskip=12mm,
+  heightrounded,
+}
+\pagestyle{fancy}
+\newcommand{\makeheadrule}{%
+\makebox[0pt][l]{\rule[0.55\baselineskip]{\headwidth}{0.4pt}}%
+\rule[0.7\baselineskip]{\headwidth}{0.4pt}}
+\renewcommand{\headrule}{%
+{\if@fancyplain\let\headrulewidth\plainheadrulewidth\fi
+\makeheadrule}}
+\makeatother
+
+% \fontsize{16pt}{\baselineskip}\selectfont 
+% \setlength{\arraycolsep}{20pt}
+
+\renewcommand{\baselinestretch}{1.8} %设置行间距
+
+\begin{document}
+\fontsize{14pt}{\baselineskip}\selectfont  %设置字体
+\heiti\textbf{一、计算题}
+	\begin{displaymath}
+		% \fontsize{14pt}{\baselineskip}\selectfont
+		\begin{array}{llll}
+			25+(50+22)=\quad & 22\div(\quad)-24=75 & (22+23)\times25=\quad & 16\times2-25=\quad \\
+			25+(50+22)=\quad & 22\times22-24=\quad & 22\times(\quad)-24=75 & 16\times2-25=\quad \\
+			25+(50+22)=\quad & 22\div-24=\quad & (22+23)\times25=\quad & 16\times2-25=\quad
+		\end{array}
+	\end{displaymath}
+	\begin{displaymath}
+		\setlength{\arraycolsep}{30pt}
+		% \fontsize{14pt}{\baselineskip}\selectfont
+		\begin{array}{lll}
+			\displaystyle\frac{2}{10}+\displaystyle\frac{(\quad)}{10}\div\displaystyle\frac{11}{13}=\frac{23}{56} &
+			\displaystyle\frac{2}{10}\times\displaystyle\frac{11}{13}+\displaystyle\frac{1}{10}=\quad &
+			\displaystyle\frac{2}{10}\times\displaystyle\frac{11}{13}+\displaystyle\frac{1}{10}=\quad &
+			\displaystyle\frac{2}{10}+\displaystyle\frac{1}{10}\times\displaystyle\frac{11}{13}=\quad &
+			\displaystyle\frac{2}{10}+\displaystyle\frac{1}{10}\times\displaystyle\frac{11}{13}=\quad &
+			\displaystyle\frac{2}{10}\div\displaystyle\frac{11}{13}+\displaystyle\frac{1}{10}=\quad \\
+			\displaystyle\frac{2}{10}\times\displaystyle\frac{11}{13}+\displaystyle\frac{1}{10}=\quad &
+			\displaystyle\frac{2}{10}+\displaystyle\frac{1}{10}\times\displaystyle\frac{11}{13}=\quad &
+			29\times15-(\quad)=65 \\
+			25+(50+22)=\quad &
+			\displaystyle\frac{2}{10}+\displaystyle\frac{1}{10}\times\displaystyle\frac{11}{13}=\quad &
+			29\times15-(\quad)=65 \\
+			\displaystyle\frac{2}{10}+\displaystyle\frac{1}{10}\times\displaystyle\frac{11}{13}=\quad &
+		\end{array}
+	\end{displaymath}
+\end{document}
