@@ -16,7 +16,7 @@ function getTime() {
 }
 
 start=$(date +%s.%N)
-pdflatex headfoot.latex
+pdflatex  -file-line-error -halt-on-error -interaction=nonstopmode -synctex=1 headfoot.latex
 end=$(date +%s.%N)
 
 getTime $start $end
